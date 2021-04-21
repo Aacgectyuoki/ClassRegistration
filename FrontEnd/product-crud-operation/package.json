@@ -1,5 +1,5 @@
 {
-  "name": "product-crud-operation",
+  "name": "class-product",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
