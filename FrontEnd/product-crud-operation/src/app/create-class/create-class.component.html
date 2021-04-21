@@ -1,0 +1,14 @@
+<div>
+    <form #classRef="ngForm" (ngSubmit)="createClass(classRef.value)">
+        <label>ID </label>
+        <input type="text" name="pid" ngModel><br/>
+        <label>Class </label>
+        <input type="text" name="pname" ngModel><br/>
+        <label>Description </label>
+        <input type="text" name="desc" ngModel><br/>
+        <label>Price </label>
+        <input type="text" name="price" ngModel><br/>
+        <input type="submit" value="Submit"/>
+        <input type="reset" value="Reset"/>
+    </form>
+</div>

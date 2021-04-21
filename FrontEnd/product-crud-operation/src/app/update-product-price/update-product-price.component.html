@@ -1,0 +1,15 @@
+<div>
+    <h2>Update Class Name, Description, & Price</h2>
+    <form #productRef="ngForm" (ngSubmit)="updatePrice(productRef.value)">
+        <label>Id</label>
+        <input type="text" name="pid" ngModel/><br/>
+        <label>Class</label>
+        <input type="text" name="pname" ngModel/><br/>
+        <label>Description</label>
+        <input type="text" name="desc" ngModel/><br/>
+        <label>Price</label>
+        <input type="text" name="price" ngModel/><br/>
+        <input type="submit" value="Update the Price"/>
+    </form>
+    {{updateMsg}}
+</div>
