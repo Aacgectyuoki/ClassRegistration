@@ -15,7 +15,7 @@ export class ClassService {
     this.http.post("http://localhost:4000/class/createClassDetails",classRef,{responseType:"text"}).
     subscribe(result=>console.log(result),error=>console.log(error));
   }
-  retrieveAllProductDetails():Observable<Product[]>{
+  retrieveAllClassDetails():Observable<Product[]>{
      return this.http.get<Product[]>("http://localhost:4000/class/allClassDetails")
   }
 
@@ -28,11 +28,7 @@ export class ClassService {
     return this.http.delete("http://localhost:4000/class/deleteById/"+id,{responseType:'text'});
   }
 
-  updateProductPrice(classRef:any):any{
+  updateDetails(classRef:any):any{
     return this.http.put("http://localhost:4000/class/updateClassDetails",classRef,{responseType:'text'})
-  }
-
-  updateProductName(classRef:any):any{
-    return this.http.put("http://localhost:4000/class/updateClassName",classRef,{responseType:'text'})
   }
 }
